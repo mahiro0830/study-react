@@ -7,10 +7,12 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
-    {/* エスケープシーケンス */}
-    <div>Tom { '\u0026' } Jerry</div>
-    <p>こんにちは、世界！</p>
-    <p>こんにちは、React！</p>
+    {/* 0 を除いて、ブール値、null、undefined は無視されます */}
+    <li>{true}</li>
+    <li>{false}</li>
+    <li>{undefined}</li>
+    <li>{null}</li>
+    <li>{0}</li>
   </>
 );
 
