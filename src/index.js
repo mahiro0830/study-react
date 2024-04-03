@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
+    {/* エスケープシーケンス */}
+    <div>Tom { '\u0026' } Jerry</div>
     <p>こんにちは、世界！</p>
     <p>こんにちは、React！</p>
   </>
