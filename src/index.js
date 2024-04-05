@@ -5,15 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const attrs = {
+  href: 'https://reactjs.org',
+  download: false,
+  target: '_blank',
+  rel: 'help',
+};
+
 root.render(
-  <>
-    {/* 0 を除いて、ブール値、null、undefined は無視されます */}
-    <li>{true}</li>
-    <li>{false}</li>
-    <li>{undefined}</li>
-    <li>{null}</li>
-    <li>{0}</li>
-  </>
+  <a {...attrs}>サポートページ</a>
 );
 
 // If you want to start measuring performance in your app, pass a function
