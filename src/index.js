@@ -6,15 +6,14 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-const attrs = {
-  href: 'https://reactjs.org',
-  download: false,
-  target: '_blank',
-  rel: 'help',
+const props = {
+  color: 'White',
+  backgroundColor: 'Blue',
+  padding: 3,
 };
 
 root.render(
-  <a {...attrs}>サポートページ</a>
+  <p style={ props }>サポートページ</p>
 );
 
 // If you want to start measuring performance in your app, pass a function
