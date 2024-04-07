@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { StateBasic } from './03/StateBasic';
+import ForList from './03/ForList';
+import books from './03/books';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <StateBasic init={ 0 } />
+  <ForList src={ books } />
 );
