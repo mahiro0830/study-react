@@ -4,7 +4,7 @@ const ForItem = ({ el }) => {
   return (
     <React.Fragment>
       <dt>{ el.title }</dt>
-      <dd>{ el.summary }</dd>
+      <dd>{ el.price }</dd>
     </React.Fragment>
   );
 }

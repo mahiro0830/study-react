@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import ForFilter from './03/ForFilter';
+import ForSort from './03/ForSort';
 import books from './03/books';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <ForFilter src={ books } />
+  <ForSort src={ books } />
 );

@@ -23,14 +23,14 @@ const books = [
   {
     isbn: '333-3333-3333-3',
     title: 'Vue.jsの本',
-    price: 4980,
+    price: 5980,
     summary: 'Vue.jsの本です',
     download: true,
   },
   {
     isbn: '444-4444-4444-4',
     title: 'Angularの本',
-    price: 4980,
+    price: 980,
     summary: 'Angularの本です',
     download: true,
   }
