@@ -4,14 +4,14 @@ const books = [
     title: 'JavaScriptの本',
     price: 2980,
     summary: 'JavaScriptの本です',
-    download: true,
+    download: false,
   },
   {
     isbn: '111-1111-1111-1',
     title: 'TypeScriptの本',
     price: 3980,
     summary: 'TypeScriptの本です',
-    download: true,
+    download: false,
   },
   {
     isbn: '222-2222-2222-2',
@@ -25,7 +25,7 @@ const books = [
     title: 'Vue.jsの本',
     price: 5980,
     summary: 'Vue.jsの本です',
-    download: true,
+    download: false,
   },
   {
     isbn: '444-4444-4444-4',
