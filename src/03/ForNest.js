@@ -1,14 +1,12 @@
 import React from 'react';
+import ForItem from './ForItem';
 
 export default function ForList ({ src }) {
   return (
     <dl>
       {
         src.map( el => (
-          <React.Fragment>
-            <dt>{ el.title }</dt>
-            <dd>{ el.summary }</dd>
-          </React.Fragment>
+          <ForItem key={ el.isbn } el={ el } />
         ) )
       }
     </dl>
