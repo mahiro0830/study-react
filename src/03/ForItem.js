@@ -6,13 +6,7 @@ const ForItem = ({ el }) => {
     <React.Fragment>
       <dt>
         { el.title }
-        {
-          (() => {
-            if ( el.download ) {
-              return <Download isbn={ el.isbn } />
-            }
-          })()
-        }
+        { el.download && <Download isbn={ el.isbn } /> }
       </dt>
       <dd>{ el.price }</dd>
     </React.Fragment>
