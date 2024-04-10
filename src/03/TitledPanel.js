@@ -3,7 +3,10 @@ import React from 'react';
 /**
  * 複数の children を受け取るコンポネント
  */
-const StyledPanel = ({ title, body }) => {
+const TitledPanel = ({ children }) => {
+  const title = children.find( el => el.key === 'title' );
+  const body = children.find( el => el.key === 'body' );
+
   return (
     <div style={{
       margin: 50,
@@ -19,4 +22,4 @@ const StyledPanel = ({ title, body }) => {
   );
 }
 
-export default StyledPanel;
+export default TitledPanel;
