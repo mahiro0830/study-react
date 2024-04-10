@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import StyleSelect from './03/SelectStyle';
+import StyledPanel from './03/StyledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <React.Fragment>
-    <StyleSelect mode={ 'light' }/>
-  </React.Fragment>
+  <StyledPanel>
+    <p>メンバー募集中！</p>
+    <p>ようこそ、WINGSプロジェクトへ！！</p>
+  </StyledPanel>
 );
