@@ -1,12 +1,12 @@
 import React from "react";
 
-const ListTemplate = ({ src, children }) => {
+const ListTemplate = ({ src, render }) => {
   return (
     <dl>
       {
         src.map( el => (
           <React.Fragment key={ el.isbn }>
-            { children( el ) }
+            { render( el ) }
           </React.Fragment>
         ) )
       }
