@@ -1,12 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import StyledPanel from './03/StyledPanel';
+import TitledPanel from './03/TitledPanel';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <StyledPanel>
+  <TitledPanel
+  title={
     <p>メンバー募集中！</p>
+  }
+  body={
     <p>ようこそ、WINGSプロジェクトへ！！</p>
-  </StyledPanel>
+  }
+  >
+  </TitledPanel>
 );
