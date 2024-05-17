@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import StateForm from './04/StateForm';
+import StateFormUC from './04/StateFormUC';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <StateForm>
-  </StateForm>
+  <StateFormUC>
+  </StateFormUC>
 );
