@@ -6,11 +6,11 @@ const EventPropagation = () => {
   const handleChild = () => alert('#child run...');
 
   return (
-    <div id='parent' onClick={handleParent}>
+    <div id='parent' onClickCapture={handleParent}>
       親要素
-      <div id='my' onClick={handleMy}>
+      <div id='my' onClickCapture={handleMy}>
         現在要素
-        <a id='child' href='https://google.com' onClick={handleChild}>
+        <a id='child' href='https://google.com' onClickCapture={handleChild}>
           子要素
         </a>
       </div>
