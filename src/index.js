@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import EventOnce from './03/EventOnce';
+import EventPassive from './03/EventPassive';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <EventOnce />
+  <EventPassive />
 );
