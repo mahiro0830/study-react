@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import FormCheck from './04/FormCheck';
+import FormCheckMulti from './04/FormCheckMulti';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <FormCheck />
+  <FormCheckMulti />
 );
