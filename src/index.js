@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import StateNest from './04/StateNest';
+import StateNestImmer from './04/StateNestImmer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <StateNest />
+  <StateNestImmer />
 );
