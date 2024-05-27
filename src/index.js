@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import FormList from './04/FormList';
+import FormCheck from './04/FormCheck';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <FormList />
+  <FormCheck />
 );
