@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import FormSelect from './04/FormSelect';
+import FormList from './04/FormList';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <FormSelect />
+  <FormList />
 );
