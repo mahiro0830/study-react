@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import StateTodo from './04/StateTodo';
+import StateTodoSort from './04/StateTodoSort';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <StateTodo />
+  <StateTodoSort />
 );
