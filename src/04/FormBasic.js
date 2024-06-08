@@ -10,10 +10,17 @@ const FormBasic = () => {
   };
 
   // フォームを初期化
-  const { register, handleSubmit, formState: { errors, isDirty, isValid } } = useForm(defaultValues);
-
+  const { register, handleSubmit, formState: { errors, isDirty, isValid, isSubmitting } } = useForm(defaultValues);
+  // サブミット時に4000ms処理（ダミーの遅延処理）
+  const onsubmit = data => {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        console.log(data);
+        resolve();
+      }, 4000);
+    });
+  }
   // submit時の処理
-  const onsubmit = data => console.log(data);
   const onerror = err => console.log(err);
 
   return (
@@ -83,7 +90,8 @@ const FormBasic = () => {
         <div>{errors.memo?.message}</div>
       </div>
       <div>
-        <button type="submit" disabled={!isDirty || !isValid}>送信</button>
+        <button type="submit" disabled={!isDirty || !isValid || isSubmitting}>送信</button>
+        {isSubmitting && <div>・・・送信中・・・</div>}
       </div>
     </form>
   );
