@@ -10,7 +10,7 @@ const FormBasic = () => {
   };
 
   // フォームを初期化
-  const { register, handleSubmit, formState: { errors } } = useForm(defaultValues);
+  const { register, handleSubmit, formState: { errors, isDirty, isValid } } = useForm(defaultValues);
 
   // submit時の処理
   const onsubmit = data => console.log(data);
@@ -83,7 +83,7 @@ const FormBasic = () => {
         <div>{errors.memo?.message}</div>
       </div>
       <div>
-        <button type="submit">送信</button>
+        <button type="submit" disabled={!isDirty || !isValid}>送信</button>
       </div>
     </form>
   );
