@@ -67,6 +67,17 @@ const FormBasic = () => {
             minLength: {
               value: 10,
               message: '備考は10文字以上で入力してください。'
+            },
+            validate: {
+              ng: (value, formValues) => {
+                const ngs = ['暴力', '殺人', 'テロ'];
+                for (const ng of ngs) {
+                  if (value.includes(ng)) {
+                    return `${ng}は使用できません。`;
+                  }
+                }
+                return true;
+              }
             }
           })} />
         <div>{errors.memo?.message}</div>
