@@ -24,6 +24,7 @@ const schema = yup.object({
   name: yup
     .string()
     .label('名前')
+    .transform((value ,orgValue) => value.normalize('NFKC'))
     .required('名前は必須です。')
     .max(20, '名前は20文字以内で入力してください。'),
   gender: yup
