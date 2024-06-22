@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import SuspenseSimple from './05/SuspenseSimple';
+import SuspenceResult from './05/SuspenseResult';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-  <SuspenseSimple />
+  <SuspenceResult />
 );
