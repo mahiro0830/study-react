@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-import PortalBasic from './05/PortalBasic';
+import ErrorRoot from './05/ErrorRoot';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <>
     <div id="dialog"></div>
-    <PortalBasic />
+    <ErrorRoot />
   </>
 );
