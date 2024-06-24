@@ -8,9 +8,23 @@ const SuspensePractice = () => {
   );
 };
 
+// 描画待ち状態かどうかのフラグを準備
+let flag = false;
+
 const TestComponent = () => {
-  console.log(new Promise(() => {}));
-  throw new Promise(() => {});
+
+  // 描画をする
+  if (flag) {
+    return (
+      <p>描画されました。</p>
+    );
+  }
+  throw new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('success!!');
+      flag = true;
+    }, 3000);
+  });
 };
 
 export default SuspensePractice;
